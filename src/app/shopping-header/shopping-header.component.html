@@ -1,0 +1,30 @@
+  <mat-toolbar class = "martop-60">  
+  <mat-toolbar-row fxLayoutAlign="space-between">
+    <div>
+      <button mat-button><span><i class="fa fa-star fa-2x" aria-hidden="true" (click)="gotoHome()"></i></span></button>
+    </div>
+    <div *ngIf="!isXsDev">
+      <button mat-button>
+        <input class="form-control form-control-sm ml-3 w-75 search-bar" type="text" [(ngModel)]="searchText" placeholder="Search" aria-label="Search by name" (change)="generateSearch()">
+        <mat-icon class = "search-block" (change)="generateSearch()">search</mat-icon>
+      </button>
+      <button mat-button>
+        <span class="cart-count" (click)="generateCartDetails()">{{cartQty}}</span>
+        <mat-icon (click)="generateCartDetails()">shopping_cart</mat-icon>
+      </button>
+    </div>
+  </mat-toolbar-row>
+  <mat-toolbar-row fxLayoutAlign="space-between end" *ngIf="isXsDev">
+    <div>
+      <button mat-button>
+        <input class="form-control form-control-sm ml-3 w-75 search-bar" type="text" [(ngModel)]="searchText" placeholder="Search" aria-label="Search by name" (change)="generateSearch()">
+        <mat-icon class = "search-block" (change)="generateSearch()">search</mat-icon>
+      </button>
+      <button mat-button>
+        <span class="cart-count" (click)="generateCartDetails()">{{cartQty}}</span>
+        <mat-icon (click)="generateCartDetails()">shopping_cart</mat-icon>
+      </button>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>
+  

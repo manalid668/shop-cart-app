@@ -1,0 +1,8 @@
+<div *ngIf="!isMobileWeb">
+    <p style="text-align: center; font-family: serif; font-weight: bold; font-size: 22px;">Filters</p>
+<div
+class="filter-box">
+<ng5-slider [(value)]="startRange" [(highValue)] = "stopRange" [options]="options" (valueChange)="generatePriceFilt(startRange, stopRange)"></ng5-slider>
+</div>
+</div>
+

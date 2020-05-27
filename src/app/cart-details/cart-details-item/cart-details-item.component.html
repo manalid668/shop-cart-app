@@ -1,0 +1,25 @@
+<div class="cart-view">
+            <div class="pull-left">
+                <img [src]="cartItem.imagePath"
+        alt={{cartItem.name}}
+        class="img-responsive"
+        style="height: 70px; width: 146px;">
+        <div>{{cartItem.name}}</div>
+            </div>
+            <div class="center-block">
+                <ul class="display-item">
+                    <li>{{cartItem.price | currencyPipe}}</li>
+                    <li><del>{{cartItem.originalPrice}}</del></li>
+                    <li style="color: darkgreen; font-size: 12px; font-weight: bolder;">{{cartItem.discountPrice}}%off</li>
+                </ul>
+                <ul class="display-item">
+                    <li><img src= "..\..\..\assets\images\minusSign.png" alt="New" style="width:30px;height:30px;" (click)="generateQtyDecrement(cartItem)"></li>
+                    <li>{{cartItem.qtyUsed}}</li>
+                    <li><img src= "..\..\..\assets\images\plusSign.png" alt="New" style="width:30px;height:30px;" (click)="generateQtyIncrement(cartItem)"></li>
+                </ul>
+            </div>
+            <a (click)="generateRemoveService(cartItem)"><p class="pull-right;">
+                REMOVE
+            </p>
+        </a>
+        </div>

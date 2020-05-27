@@ -1,0 +1,53 @@
+.martop-60 {
+    background-color: blue;
+    height: 60px;
+}
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+img {
+    cursor: pointer;
+}
+.fa-2x {
+    cursor: pointer;
+    color: yellow; 
+    padding: -12px
+}
+.cart-count {
+    background: red;
+    border-radius: 0.em;
+    -moz-border-radius: 0.8em;
+    -webkit-border-radius: 0.8em;
+    color: #ffffff;
+    display: inline-block;
+    font-weight: 2px;
+    line-height: 1.0em;
+    margin-right: 5px;
+    text-align: center;
+    width: 1.2em;
+    cursor: pointer;
+    margin-top: -24px;
+    margin-right: -14px;
+}
+.search-bar{
+    background-color: transparent; 
+    border: none; 
+    border-bottom: 1px solid #ced4da;
+    border-radius: 0;
+    outline: none;
+}
+.martop-60{
+    border: none;
+    height: 35px;
+}
+.search-block{
+    margin-right: -216px;
+    margin-top: -66px;
+    color: white;
+}
+.mat-icon{
+    color: white;
+}

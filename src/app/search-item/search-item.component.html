@@ -1,0 +1,12 @@
+<div>
+    <ul class="nav" *ngIf = "!isMobileView">
+        <li><b>Sort By</b></li>
+        <li><a (click)= "generateHighPricedItems()">Price -- High Low</a></li>
+        <li><a (click)= "generateLowPricedItems()">Price -- Low High</a></li>
+        <li><a (click)= "generateDiscountPricedItems()">Price -- Discount</a></li>
+    </ul>
+    <ul class="nav" *ngIf = "isMobileView">
+        <li><b><img src= "..\..\assets\images\sort.png" alt="New" style="width:20px;height:20px;" (click)="getSortOptions()">Sort By</b></li>
+        <li><b><img src= "..\..\assets\images\filtericon.png" alt="New" style="width:40px;height: 40px;" (click)="getFilterOptions()">Filter</b></li>
+    </ul>
+</div>
